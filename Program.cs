@@ -30,22 +30,24 @@ namespace Garden
 
       while (play == true) 
       {
-        Console.WriteLine( myHerb.Name + " is " + myHerb.Height + "inch tall and has " + myHerb.Flowers + " flowers. It has " + myHerb.Health + " health points.");
+        Console.WriteLine( myHerb.Name + " is " + myHerb.Height + " inch tall and has " + myHerb.Flowers + " flowers. It has " + myHerb.Health + " health points.");
         Console.WriteLine("What would you like to do? Your action choices are: 'water', 'sun', 'feed', or 'exit'.");
-        string action = Console.ReadLine();        
-        action = Console.ReadLine();
+        string action = Console.ReadLine(); 
 
         if (action == "water")
         {
           myHerb.Height = myHerb.Height + 1;
+          Console.WriteLine(myHerb.Name + " is " + myHerb.Height);
         }
         else if (action == "sun")
         {
-          
+          myHerb.Flowers = myHerb.Flowers + 1;
+          Console.WriteLine(myHerb.Name + " has " + myHerb.Flowers + " flowers.");
         }
         else if (action == "feed")
         {
-          
+          myHerb.Health = myHerb.Health + 1;
+          Console.WriteLine(myHerb.Name + " has " + myHerb.Health + " health points.");
         }
         else if (myHerb.Health <= 0)
         {
