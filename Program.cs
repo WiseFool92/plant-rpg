@@ -1,7 +1,7 @@
 using System;
 //using System.Collections.Generic;
 using Garden.Plant;
-//using Disaster.Plant;
+using Disaster.Plant;
 
 namespace Garden
 {
@@ -63,7 +63,12 @@ namespace Garden
         {
           Console.WriteLine("Sorry I didn't understand your input");
         }
+        //call disaster method here
       }
+    }
+    public static void Disaster()
+    {
+
     }
   }
 }
