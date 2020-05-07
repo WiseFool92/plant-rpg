@@ -26,10 +26,11 @@ namespace Garden
       string myName = Console.ReadLine();
       Herb myHerb = new Herb(myName, 1, 0, 1);
 
-      Console.WriteLine("Your plant " + myName + " is ready for you to take care of it!");
+      Console.WriteLine("Your plant " + myHerb.Name + " is ready for you to take care of it!");
 
-      while (play == true) //myHerb.health > 0 
+      while (play == true) 
       {
+        Console.WriteLine( myHerb.Name + " is " + myHerb.Height + "inch tall and has " + myHerb.Flowers + " flowers. It has " + myHerb.Health + " health points.");
         Console.WriteLine("What would you like to do? Your action choices are: 'water', 'sun', 'feed', or 'exit'.");
         string action = Console.ReadLine();        
         action = Console.ReadLine();
@@ -48,11 +49,13 @@ namespace Garden
         }
         else if (myHerb.Health <= 0)
         {
+          Console.WriteLine("Uh-oh! Your plant died!");
           play = false;
         }
         else if (action == "exit")
         {
           Console.WriteLine("Hope you enjoyed growing!");
+          play = false;
         }
         else
         {
