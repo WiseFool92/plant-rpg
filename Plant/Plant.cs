@@ -16,9 +16,5 @@ namespace Garden.Plant
       Flowers = flower;
       Health = health;
     }
-
-
-
-
   }
 }

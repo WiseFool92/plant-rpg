@@ -63,12 +63,25 @@ namespace Garden
         {
           Console.WriteLine("Sorry I didn't understand your input");
         }
-        //call disaster method here
+        Events myEvent = new Events();
+        myEvent.Disaster();
+        if (myEvent.WindStorm == true) 
+        {
+          myHerb.Height = myHerb.Height -1;
+        }
+        else if (myEvent.AphidAttack == true) 
+        {
+          myHerb.Health = myHerb.Health -1;
+        }
+        else if (myEvent.SlugBite == true)
+        {
+          myHerb.Flowers = myHerb.Flowers -1;
+        }
+        else 
+        {
+          myHerb.Health = myHerb.Health + 1;
+        }
       }
-    }
-    public static void Disaster()
-    {
-
     }
   }
 }

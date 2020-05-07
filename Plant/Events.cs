@@ -1,29 +1,47 @@
 using System;
-using System.Collections.Generic;
+//using System.Collections.Generic;
 
 namespace Disaster.Plant
 {
   public class Events
   {
-    // Properties
-    public bool Windstorm { get; set; }
+    // Fields
+    public bool WindStorm { get; set; }
     public bool AphidAttack { get; set; }
     public bool SlugBite { get; set; }
 
     // Constructor
-    public Events (bool windStorm, bool aphidAttack, bool slugBite)
+    public Events ()
     {
-      Windstorm = false;
+      WindStorm = false;
       AphidAttack = false;
       SlugBite = false;
     }
-
-    int min = 1;
-    int max = 30;
-    public int RandomNumber(int min, int max)
+    // Disaster method to determine which event initiates
+    public void Disaster()
     {
-      Random random = new Random();
-      return random.Next(min, max);
+      Random rand = new Random();
+      int count = rand.Next(1, 5);
+
+      if(count == 1)
+      {
+        WindStorm = true;
+        Console.WriteLine("Oh no! A wind storm damaged your plant!");
+      }
+      else if(count == 2)
+      {
+        AphidAttack = true;
+        Console.WriteLine("Here comes the aphid horde, brace for impact!");
+      }
+      else if(count == 3)
+      {
+        SlugBite = true;
+        Console.WriteLine("Slime Time! The slugs are sliding in...");
+      }
+      else
+      {
+        Console.WriteLine("It is a great day to grow!");
+      }
     }
   }
 }
