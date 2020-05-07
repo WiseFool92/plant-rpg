@@ -1,10 +1,10 @@
-# _Wildlife Tracker_
+# _Herb Rpg_
 
-#### May 6th, 2020
+#### May 7th, 2020
 
 ## Description
 
-_This template creates a specialized environment_
+_This console game is about plant life & accompanying hardships_
 
 _This site is already linked to an index.html, styles.css, jQuery.js(3.4.1), scripts.js., main.js, jest, babel, lint, webpack, json, & gitignore_
 
@@ -42,14 +42,17 @@ git clone {link to repository}
 ## Specs
 
 ### Behavior Driven Development Spec List
-#### Wildlife Tracker
+#### Herb Rpg
 |                          Behavior                          | Input  | Output  |
 | :--------------------------------------------------------: | :----: | :-----: |
-| The program will ask the user if they have any animals | 'y' | 'Accepts animal data'  |
-| The program will ask the user about the animals species & age | 'tiger' '3' | 'holds data & asks if there is another' |
-| If the user responds with | 'n' | 'program stops' |
-| If the user responds with | 'y' | 'the program asks for more inputs' |
-| If the user responds with show | 'show' | 'the program displays (in console) the animals added so far' |
+| The program will ask the user to name their plant | 'Mo' | 'Program displays beginning stats for named plant'  |
+| The program will allow the user to water their plant | 'water' | 'grows an inch' |
+| The user can grant the plant sunshine | 'Shine Sun' | 'grows a flower' |
+| The user can feed their plant | 'feed' | 'health increases by 1' |
+| After each user action, program randomly determines if something bad happens | 'user action' | '50% odds something bad will happen' |
+| The users herb is hit by a | 'wind storm' | 'Subtracts an inch' |
+| The players herb is hit by an | 'Aphid Attack' | 'health decreases by 1' |
+| The users plant can be attacked by Slugs | 'Slug Bites' | 'Flowers decrease by 1' |
 
 
 
@@ -60,7 +63,7 @@ _N/A_ - 5/6/2020
 
 ## gh-pages
 
-WiseFool92.github.io/wildlife-tracker
+WiseFool92.github.io/plant-rpg
 
 ## Support
 

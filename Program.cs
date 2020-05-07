@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Garden.Plant;
-using Disater.Plant;
+using Disaster.Plant;
 
 namespace Garden
 {
@@ -9,7 +9,8 @@ namespace Garden
   {
     public static void Main()
     {
-      Console.WriteLine("Let's go on a herb adventure!")
+      Console.WriteLine("Let's go on a herb adventure!");
+
     }
   }
 }
